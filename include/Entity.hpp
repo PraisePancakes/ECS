@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cstdint>
 #include <vector>
+#include "Component.hpp"
 
 /*
 @brief :
@@ -22,18 +23,19 @@
 
 */
 
-
 using EntityID = std::uint32_t;
 class Component;
 
 class Entity
 {
     EntityID m_EntityID;
-    std::vector<Component *> m_Components;
+    std::vector<std::unique_ptr<Component>> m_Components;
     std::size_t m_CurrentComponentSize = 0;
 
 public:
     Entity();
+
+    void DisplayComponents() const;
 
     /*
         @brief :
@@ -47,9 +49,33 @@ public:
 
                 whatever changes with c will change in the entities component reference to c as well
 
+
+        @template-params
+                the template parametrics will be of some derived component type, e.g Transform, Sprite, RigidBody, Physics, etc...
+
+
+            this template allows for a call like so :
+             entity.AddComponent<SomeComponent>();
+
+             TO-DO:
+             implement variadics for this template function such that I can call multiple components to the AddComponent method
+             e.g.
+
+             entity.AddComponent<C1, C2,...CN>();
+
+             maybe use an initialization_list and forward the variadic args to the list
+
     */
+
     template <typename T>
-    T &AddComponent(){};
+    T &AddComponent()
+    {
+        T *c = new T();
+        c->entity = this;
+        std::unique_ptr<T> cUPtr{c};
+        this->m_Components.push_back(std::move(cUPtr));
+        return *c;
+    };
 
     ~Entity();
 };

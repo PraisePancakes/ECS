@@ -3,6 +3,7 @@
 #include <iostream>
 
 using ComponentTypeID = std::size_t;
+class Entity;
 class Component
 {
     ComponentTypeID m_typeID;

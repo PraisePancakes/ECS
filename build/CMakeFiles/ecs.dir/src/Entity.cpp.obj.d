@@ -165,4 +165,5 @@ CMakeFiles/ecs.dir/src/Entity.cpp.obj: \
  C:/mingw64/include/c++/13.2.0/vector \
  C:/mingw64/include/c++/13.2.0/bits/stl_vector.h \
  C:/mingw64/include/c++/13.2.0/bits/stl_bvector.h \
- C:/mingw64/include/c++/13.2.0/bits/vector.tcc
+ C:/mingw64/include/c++/13.2.0/bits/vector.tcc \
+ C:/Users/aryas/OneDrive/Desktop/ECS/include/Component.hpp

@@ -172,6 +172,7 @@ CMakeFiles/ecs.dir/src/Component.cpp.obj: C:/Users/aryas/OneDrive/Desktop/ECS/sr
   C:/mingw64/x86_64-w64-mingw32/include/wctype.h
 
 CMakeFiles/ecs.dir/src/Entity.cpp.obj: C:/Users/aryas/OneDrive/Desktop/ECS/src/Entity.cpp \
+  C:/Users/aryas/OneDrive/Desktop/ECS/include/Component.hpp \
   C:/Users/aryas/OneDrive/Desktop/ECS/include/Entity.hpp \
   C:/mingw64/include/c++/13.2.0/backward/auto_ptr.h \
   C:/mingw64/include/c++/13.2.0/backward/binders.h \

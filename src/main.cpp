@@ -5,8 +5,9 @@
 
 int main(int argc, char *argv[])
 {
-    TransformComponent tc;
-    ComponentTypeID id = tc.GetTypeID();
-    std::cout << id;
+    Entity e;
+    e.AddComponent<TransformComponent>();
+    e.DisplayComponents();
+
     return 0;
 }
