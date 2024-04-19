@@ -128,6 +128,78 @@ ecs/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ecs.dir\build.make CMakeFiles/ecs.dir/build
 .PHONY : ecs/fast
 
+src/Component.obj: src/Component.cpp.obj
+.PHONY : src/Component.obj
+
+# target to build an object file
+src/Component.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ecs.dir\build.make CMakeFiles/ecs.dir/src/Component.cpp.obj
+.PHONY : src/Component.cpp.obj
+
+src/Component.i: src/Component.cpp.i
+.PHONY : src/Component.i
+
+# target to preprocess a source file
+src/Component.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ecs.dir\build.make CMakeFiles/ecs.dir/src/Component.cpp.i
+.PHONY : src/Component.cpp.i
+
+src/Component.s: src/Component.cpp.s
+.PHONY : src/Component.s
+
+# target to generate assembly for a file
+src/Component.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ecs.dir\build.make CMakeFiles/ecs.dir/src/Component.cpp.s
+.PHONY : src/Component.cpp.s
+
+src/Entity.obj: src/Entity.cpp.obj
+.PHONY : src/Entity.obj
+
+# target to build an object file
+src/Entity.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ecs.dir\build.make CMakeFiles/ecs.dir/src/Entity.cpp.obj
+.PHONY : src/Entity.cpp.obj
+
+src/Entity.i: src/Entity.cpp.i
+.PHONY : src/Entity.i
+
+# target to preprocess a source file
+src/Entity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ecs.dir\build.make CMakeFiles/ecs.dir/src/Entity.cpp.i
+.PHONY : src/Entity.cpp.i
+
+src/Entity.s: src/Entity.cpp.s
+.PHONY : src/Entity.s
+
+# target to generate assembly for a file
+src/Entity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ecs.dir\build.make CMakeFiles/ecs.dir/src/Entity.cpp.s
+.PHONY : src/Entity.cpp.s
+
+src/TransformComponent.obj: src/TransformComponent.cpp.obj
+.PHONY : src/TransformComponent.obj
+
+# target to build an object file
+src/TransformComponent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ecs.dir\build.make CMakeFiles/ecs.dir/src/TransformComponent.cpp.obj
+.PHONY : src/TransformComponent.cpp.obj
+
+src/TransformComponent.i: src/TransformComponent.cpp.i
+.PHONY : src/TransformComponent.i
+
+# target to preprocess a source file
+src/TransformComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ecs.dir\build.make CMakeFiles/ecs.dir/src/TransformComponent.cpp.i
+.PHONY : src/TransformComponent.cpp.i
+
+src/TransformComponent.s: src/TransformComponent.cpp.s
+.PHONY : src/TransformComponent.s
+
+# target to generate assembly for a file
+src/TransformComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ecs.dir\build.make CMakeFiles/ecs.dir/src/TransformComponent.cpp.s
+.PHONY : src/TransformComponent.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -161,6 +233,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ecs
+	@echo ... src/Component.obj
+	@echo ... src/Component.i
+	@echo ... src/Component.s
+	@echo ... src/Entity.obj
+	@echo ... src/Entity.i
+	@echo ... src/Entity.s
+	@echo ... src/TransformComponent.obj
+	@echo ... src/TransformComponent.i
+	@echo ... src/TransformComponent.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

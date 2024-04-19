@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ecs.dir/src/Component.cpp.obj"
+  "CMakeFiles/ecs.dir/src/Component.cpp.obj.d"
+  "CMakeFiles/ecs.dir/src/Entity.cpp.obj"
+  "CMakeFiles/ecs.dir/src/Entity.cpp.obj.d"
+  "CMakeFiles/ecs.dir/src/TransformComponent.cpp.obj"
+  "CMakeFiles/ecs.dir/src/TransformComponent.cpp.obj.d"
   "CMakeFiles/ecs.dir/src/main.cpp.obj"
   "CMakeFiles/ecs.dir/src/main.cpp.obj.d"
   "ecs.exe"

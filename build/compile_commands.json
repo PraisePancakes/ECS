@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/aryas/OneDrive/Desktop/ECS/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\ecs.dir\\src\\main.cpp.obj -c C:\\Users\\aryas\\OneDrive\\Desktop\\ECS\\src\\main.cpp",
+  "file": "C:/Users/aryas/OneDrive/Desktop/ECS/src/main.cpp",
+  "output": "CMakeFiles/ecs.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/aryas/OneDrive/Desktop/ECS/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\ecs.dir\\src\\Entity.cpp.obj -c C:\\Users\\aryas\\OneDrive\\Desktop\\ECS\\src\\Entity.cpp",
+  "file": "C:/Users/aryas/OneDrive/Desktop/ECS/src/Entity.cpp",
+  "output": "CMakeFiles/ecs.dir/src/Entity.cpp.obj"
+},
+{
+  "directory": "C:/Users/aryas/OneDrive/Desktop/ECS/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\ecs.dir\\src\\Component.cpp.obj -c C:\\Users\\aryas\\OneDrive\\Desktop\\ECS\\src\\Component.cpp",
+  "file": "C:/Users/aryas/OneDrive/Desktop/ECS/src/Component.cpp",
+  "output": "CMakeFiles/ecs.dir/src/Component.cpp.obj"
+},
+{
+  "directory": "C:/Users/aryas/OneDrive/Desktop/ECS/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\ecs.dir\\src\\TransformComponent.cpp.obj -c C:\\Users\\aryas\\OneDrive\\Desktop\\ECS\\src\\TransformComponent.cpp",
+  "file": "C:/Users/aryas/OneDrive/Desktop/ECS/src/TransformComponent.cpp",
+  "output": "CMakeFiles/ecs.dir/src/TransformComponent.cpp.obj"
+}
+]
