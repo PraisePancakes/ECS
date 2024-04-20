@@ -1,9 +1,56 @@
 #pragma once
-#include <memory>
 #include <iostream>
 #include <cstdint>
 #include <vector>
-#include "Component.hpp"
+#include <memory>
+
+class Entity;
+class Component;
+using ComponentTypeID = std::size_t;
+
+ComponentTypeID GetComponentTypeID()
+{
+    static ComponentTypeID lastID = 0;
+    return lastID++;
+}
+
+template <typename T>
+ComponentTypeID GetComponentTypeID()
+{
+    static ComponentTypeID typeID = GetComponentTypeID();
+    return typeID;
+}
+
+class Component
+{
+    ComponentTypeID m_typeID;
+
+protected:
+public:
+    Entity *entity;
+    /*
+        @brief :
+                type id will not be created in a component instance, but rather passed from a derived component class
+                i.e
+                DerivedComponent() : Component(GetComponentTypeID<DerivedComponent>) {};
+
+    */
+    Component(ComponentTypeID id)
+    {
+        this->m_typeID = id;
+    };
+    [[nodiscard]] ComponentTypeID GetTypeID() const { return this->m_typeID; };
+    Entity *GetOwner() const
+    {
+        return this->entity;
+    };
+
+    virtual void Init(){};
+    virtual void Render(){};
+    virtual void Update(){};
+
+    virtual ~Component(){};
+};
 
 /*
 @brief :
@@ -24,7 +71,6 @@
 */
 
 using EntityID = std::uint32_t;
-class Component;
 
 class Entity
 {
@@ -33,9 +79,23 @@ class Entity
     std::size_t m_CurrentComponentSize = 0;
 
 public:
-    Entity();
+    Entity()
+    {
+        static std::size_t lastID = 0;
+        this->m_EntityID = lastID;
+        lastID++;
+    };
 
-    void DisplayComponents() const;
+    void DisplayComponents() const
+    {
+        for (auto &c : m_Components)
+        {
+            if (c != nullptr)
+            {
+                std::cout << c->GetTypeID() << std::endl;
+            }
+        }
+    };
 
     /*
         @brief :
@@ -68,7 +128,7 @@ public:
     */
 
     template <typename T>
-    T &AddComponent()
+    [[nodiscard]] T &AddComponent()
     {
         T *c = new T();
         c->entity = this;
@@ -77,5 +137,47 @@ public:
         return *c;
     };
 
-    ~Entity();
+    template <typename T>
+    bool HasComponent()
+    {
+        ComponentTypeID typeID = GetComponentTypeID<T>();
+        if (typeID < m_Components.size() && m_Components[typeID] != nullptr)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    ~Entity(){};
+};
+
+class SpriteComponent : public Component
+{
+
+public:
+    SpriteComponent() : Component(GetComponentTypeID<SpriteComponent>()) { std::cout << "Sprite Component Constructed " << GetComponentTypeID<SpriteComponent> << std::endl; };
+    void Update() override{};
+    void Render() override{};
+    void Init() override{};
+    ~SpriteComponent() override{};
+};
+
+class TransformComponent : public Component
+{
+    float xPos;
+    float yPos;
+
+public:
+    TransformComponent() : Component(GetComponentTypeID<TransformComponent>()){};
+
+    void Translate(float dX, float dY) noexcept
+    {
+        this->xPos += dX;
+        this->yPos += dY;
+    };
+    void Update() override{};
+    void Init() override{};
+    void Render() override{};
+
+    ~TransformComponent() override{};
 };

@@ -1,5 +1,5 @@
-CMakeFiles/ecs.dir/src/main.cpp.obj: \
- C:\Users\aryas\OneDrive\Desktop\ECS\src\main.cpp \
+CMakeFiles/ecs.dir/src/ECS.cpp.obj: \
+ C:\Users\aryas\OneDrive\Desktop\ECS\src\ECS.cpp \
  C:/mingw64/include/c++/13.2.0/iostream \
  C:/mingw64/include/c++/13.2.0/bits/requires_hosted.h \
  C:/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -141,7 +141,6 @@ CMakeFiles/ecs.dir/src/main.cpp.obj: \
  C:/mingw64/include/c++/13.2.0/bits/ostream.tcc \
  C:/mingw64/include/c++/13.2.0/istream \
  C:/mingw64/include/c++/13.2.0/bits/istream.tcc \
- C:/Users/aryas/OneDrive/Desktop/ECS/include/ECS.hpp \
  C:/mingw64/include/c++/13.2.0/cstdint \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \

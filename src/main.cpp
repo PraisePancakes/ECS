@@ -1,13 +1,10 @@
 #include <iostream>
-#include "../include/Entity.hpp"
-#include "../include/Component.hpp"
-#include "../include/TransformComponent.hpp"
+#include "../include/ECS.hpp"
 
 int main(int argc, char *argv[])
 {
     Entity e;
-    e.AddComponent<TransformComponent>();
-    e.DisplayComponents();
+    SpriteComponent sc = e.AddComponent<SpriteComponent>();
 
     return 0;
 }

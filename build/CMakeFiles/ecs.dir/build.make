@@ -82,67 +82,19 @@ CMakeFiles/ecs.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ecs.dir/src/main.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aryas\OneDrive\Desktop\ECS\src\main.cpp -o CMakeFiles\ecs.dir\src\main.cpp.s
 
-CMakeFiles/ecs.dir/src/Entity.cpp.obj: CMakeFiles/ecs.dir/flags.make
-CMakeFiles/ecs.dir/src/Entity.cpp.obj: C:/Users/aryas/OneDrive/Desktop/ECS/src/Entity.cpp
-CMakeFiles/ecs.dir/src/Entity.cpp.obj: CMakeFiles/ecs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\aryas\OneDrive\Desktop\ECS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ecs.dir/src/Entity.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ecs.dir/src/Entity.cpp.obj -MF CMakeFiles\ecs.dir\src\Entity.cpp.obj.d -o CMakeFiles\ecs.dir\src\Entity.cpp.obj -c C:\Users\aryas\OneDrive\Desktop\ECS\src\Entity.cpp
-
-CMakeFiles/ecs.dir/src/Entity.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ecs.dir/src/Entity.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aryas\OneDrive\Desktop\ECS\src\Entity.cpp > CMakeFiles\ecs.dir\src\Entity.cpp.i
-
-CMakeFiles/ecs.dir/src/Entity.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ecs.dir/src/Entity.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aryas\OneDrive\Desktop\ECS\src\Entity.cpp -o CMakeFiles\ecs.dir\src\Entity.cpp.s
-
-CMakeFiles/ecs.dir/src/Component.cpp.obj: CMakeFiles/ecs.dir/flags.make
-CMakeFiles/ecs.dir/src/Component.cpp.obj: C:/Users/aryas/OneDrive/Desktop/ECS/src/Component.cpp
-CMakeFiles/ecs.dir/src/Component.cpp.obj: CMakeFiles/ecs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\aryas\OneDrive\Desktop\ECS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ecs.dir/src/Component.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ecs.dir/src/Component.cpp.obj -MF CMakeFiles\ecs.dir\src\Component.cpp.obj.d -o CMakeFiles\ecs.dir\src\Component.cpp.obj -c C:\Users\aryas\OneDrive\Desktop\ECS\src\Component.cpp
-
-CMakeFiles/ecs.dir/src/Component.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ecs.dir/src/Component.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aryas\OneDrive\Desktop\ECS\src\Component.cpp > CMakeFiles\ecs.dir\src\Component.cpp.i
-
-CMakeFiles/ecs.dir/src/Component.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ecs.dir/src/Component.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aryas\OneDrive\Desktop\ECS\src\Component.cpp -o CMakeFiles\ecs.dir\src\Component.cpp.s
-
-CMakeFiles/ecs.dir/src/TransformComponent.cpp.obj: CMakeFiles/ecs.dir/flags.make
-CMakeFiles/ecs.dir/src/TransformComponent.cpp.obj: C:/Users/aryas/OneDrive/Desktop/ECS/src/TransformComponent.cpp
-CMakeFiles/ecs.dir/src/TransformComponent.cpp.obj: CMakeFiles/ecs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\aryas\OneDrive\Desktop\ECS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ecs.dir/src/TransformComponent.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ecs.dir/src/TransformComponent.cpp.obj -MF CMakeFiles\ecs.dir\src\TransformComponent.cpp.obj.d -o CMakeFiles\ecs.dir\src\TransformComponent.cpp.obj -c C:\Users\aryas\OneDrive\Desktop\ECS\src\TransformComponent.cpp
-
-CMakeFiles/ecs.dir/src/TransformComponent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ecs.dir/src/TransformComponent.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aryas\OneDrive\Desktop\ECS\src\TransformComponent.cpp > CMakeFiles\ecs.dir\src\TransformComponent.cpp.i
-
-CMakeFiles/ecs.dir/src/TransformComponent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ecs.dir/src/TransformComponent.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aryas\OneDrive\Desktop\ECS\src\TransformComponent.cpp -o CMakeFiles\ecs.dir\src\TransformComponent.cpp.s
-
 # Object files for target ecs
 ecs_OBJECTS = \
-"CMakeFiles/ecs.dir/src/main.cpp.obj" \
-"CMakeFiles/ecs.dir/src/Entity.cpp.obj" \
-"CMakeFiles/ecs.dir/src/Component.cpp.obj" \
-"CMakeFiles/ecs.dir/src/TransformComponent.cpp.obj"
+"CMakeFiles/ecs.dir/src/main.cpp.obj"
 
 # External object files for target ecs
 ecs_EXTERNAL_OBJECTS =
 
 ecs.exe: CMakeFiles/ecs.dir/src/main.cpp.obj
-ecs.exe: CMakeFiles/ecs.dir/src/Entity.cpp.obj
-ecs.exe: CMakeFiles/ecs.dir/src/Component.cpp.obj
-ecs.exe: CMakeFiles/ecs.dir/src/TransformComponent.cpp.obj
 ecs.exe: CMakeFiles/ecs.dir/build.make
 ecs.exe: CMakeFiles/ecs.dir/linkLibs.rsp
 ecs.exe: CMakeFiles/ecs.dir/objects1.rsp
 ecs.exe: CMakeFiles/ecs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\aryas\OneDrive\Desktop\ECS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ecs.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\aryas\OneDrive\Desktop\ECS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ecs.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ecs.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
