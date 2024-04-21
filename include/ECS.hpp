@@ -39,7 +39,7 @@ public:
     {
         this->m_typeID = id;
     };
-    [[nodiscard]] ComponentTypeID GetTypeID() const { return this->m_typeID; };
+    ComponentTypeID GetTypeID() const { return this->m_typeID; };
     Entity *GetOwner() const
     {
         return this->entity;
@@ -77,6 +77,8 @@ class Entity
     EntityID m_EntityID;
     std::vector<std::unique_ptr<Component>> m_Components;
     std::size_t m_CurrentComponentSize = 0;
+    bool m_IsActive = true;
+    std::string m_eTag = "Default";
 
 public:
     Entity()
@@ -86,17 +88,33 @@ public:
         lastID++;
     };
 
+    Entity(const std::string &tag)
+    {
+        static std::size_t lastID = 0;
+        this->m_EntityID = lastID;
+        this->m_eTag = tag;
+        lastID++;
+    };
+
     void DisplayComponents() const
     {
+        if (m_Components.size() == 0)
+        {
+            std::cout << "Entity contains no components " << std::endl;
+            return;
+        }
         for (auto &c : m_Components)
         {
             if (c != nullptr)
             {
-                std::cout << c->GetTypeID() << std::endl;
+                std::cout << "Component ID : " << c->GetTypeID() << std::endl;
             }
         }
     };
 
+    EntityID GetID() const { return this->m_EntityID; };
+
+    std::string GetTag() const { return this->m_eTag; };
     /*
         @brief :
                 The AddComponent generic method will be accept any derived component from a base component class, and set the components entity ref owner to this instance
@@ -126,15 +144,45 @@ public:
              maybe use an initialization_list and forward the variadic args to the list
 
     */
+    template <typename T>
+    T &GetComponent()
+    {
+        // Find and return the component of type T if it exists
+        ComponentTypeID typeID = GetComponentTypeID<T>();
+        for (auto &c : m_Components)
+        {
+            if (c && c->GetTypeID() == typeID)
+            {
+                return dynamic_cast<T &>(*c);
+            }
+        }
+        // If component of type T does not exist, throw an exception or handle accordingly
+        throw std::runtime_error("Component not found.");
+    }
 
     template <typename T>
-    [[nodiscard]] T &AddComponent()
+    T &AddComponent()
     {
+        if (HasComponent<T>())
+        {
+            return GetComponent<T>();
+        }
         T *c = new T();
         c->entity = this;
         std::unique_ptr<T> cUPtr{c};
         this->m_Components.push_back(std::move(cUPtr));
+        m_CurrentComponentSize = m_Components.size();
         return *c;
+    };
+
+    bool IsActive() const
+    {
+        return m_IsActive;
+    }
+
+    void DestroyEntity()
+    {
+        this->m_IsActive = false;
     };
 
     template <typename T>
@@ -149,35 +197,4 @@ public:
     }
 
     ~Entity(){};
-};
-
-class SpriteComponent : public Component
-{
-
-public:
-    SpriteComponent() : Component(GetComponentTypeID<SpriteComponent>()) { std::cout << "Sprite Component Constructed " << GetComponentTypeID<SpriteComponent> << std::endl; };
-    void Update() override{};
-    void Render() override{};
-    void Init() override{};
-    ~SpriteComponent() override{};
-};
-
-class TransformComponent : public Component
-{
-    float xPos;
-    float yPos;
-
-public:
-    TransformComponent() : Component(GetComponentTypeID<TransformComponent>()){};
-
-    void Translate(float dX, float dY) noexcept
-    {
-        this->xPos += dX;
-        this->yPos += dY;
-    };
-    void Update() override{};
-    void Init() override{};
-    void Render() override{};
-
-    ~TransformComponent() override{};
 };

@@ -3,7 +3,10 @@
 
 CMakeFiles/ecs.dir/src/main.cpp.obj
  C:/Users/aryas/OneDrive/Desktop/ECS/src/main.cpp
+ C:/Users/aryas/OneDrive/Desktop/ECS/include/Components/SpriteComponent.hpp
+ C:/Users/aryas/OneDrive/Desktop/ECS/include/Components/TransformComponent.hpp
  C:/Users/aryas/OneDrive/Desktop/ECS/include/ECS.hpp
+ C:/Users/aryas/OneDrive/Desktop/ECS/include/Manager/EntityManager.hpp
  C:/mingw64/include/c++/13.2.0/backward/auto_ptr.h
  C:/mingw64/include/c++/13.2.0/backward/binders.h
  C:/mingw64/include/c++/13.2.0/bit
@@ -23,6 +26,7 @@ CMakeFiles/ecs.dir/src/main.cpp.obj
  C:/mingw64/include/c++/13.2.0/bits/cpp_type_traits.h
  C:/mingw64/include/c++/13.2.0/bits/cxxabi_forced.h
  C:/mingw64/include/c++/13.2.0/bits/cxxabi_init_exception.h
+ C:/mingw64/include/c++/13.2.0/bits/erase_if.h
  C:/mingw64/include/c++/13.2.0/bits/exception.h
  C:/mingw64/include/c++/13.2.0/bits/exception_defines.h
  C:/mingw64/include/c++/13.2.0/bits/exception_ptr.h
@@ -42,6 +46,7 @@ CMakeFiles/ecs.dir/src/main.cpp.obj
  C:/mingw64/include/c++/13.2.0/bits/move.h
  C:/mingw64/include/c++/13.2.0/bits/nested_exception.h
  C:/mingw64/include/c++/13.2.0/bits/new_allocator.h
+ C:/mingw64/include/c++/13.2.0/bits/node_handle.h
  C:/mingw64/include/c++/13.2.0/bits/ostream.tcc
  C:/mingw64/include/c++/13.2.0/bits/ostream_insert.h
  C:/mingw64/include/c++/13.2.0/bits/postypes.h
@@ -61,9 +66,12 @@ CMakeFiles/ecs.dir/src/main.cpp.obj
  C:/mingw64/include/c++/13.2.0/bits/stl_iterator.h
  C:/mingw64/include/c++/13.2.0/bits/stl_iterator_base_funcs.h
  C:/mingw64/include/c++/13.2.0/bits/stl_iterator_base_types.h
+ C:/mingw64/include/c++/13.2.0/bits/stl_map.h
+ C:/mingw64/include/c++/13.2.0/bits/stl_multimap.h
  C:/mingw64/include/c++/13.2.0/bits/stl_pair.h
  C:/mingw64/include/c++/13.2.0/bits/stl_raw_storage_iter.h
  C:/mingw64/include/c++/13.2.0/bits/stl_tempbuf.h
+ C:/mingw64/include/c++/13.2.0/bits/stl_tree.h
  C:/mingw64/include/c++/13.2.0/bits/stl_uninitialized.h
  C:/mingw64/include/c++/13.2.0/bits/stl_vector.h
  C:/mingw64/include/c++/13.2.0/bits/streambuf.tcc
@@ -99,6 +107,7 @@ CMakeFiles/ecs.dir/src/main.cpp.obj
  C:/mingw64/include/c++/13.2.0/iosfwd
  C:/mingw64/include/c++/13.2.0/iostream
  C:/mingw64/include/c++/13.2.0/istream
+ C:/mingw64/include/c++/13.2.0/map
  C:/mingw64/include/c++/13.2.0/memory
  C:/mingw64/include/c++/13.2.0/new
  C:/mingw64/include/c++/13.2.0/ostream

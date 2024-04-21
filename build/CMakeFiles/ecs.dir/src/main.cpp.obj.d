@@ -165,4 +165,13 @@ CMakeFiles/ecs.dir/src/main.cpp.obj: \
  C:/mingw64/include/c++/13.2.0/bits/atomic_lockfree_defines.h \
  C:/mingw64/include/c++/13.2.0/backward/auto_ptr.h \
  C:/mingw64/include/c++/13.2.0/pstl/glue_memory_defs.h \
- C:/mingw64/include/c++/13.2.0/pstl/execution_defs.h
+ C:/mingw64/include/c++/13.2.0/pstl/execution_defs.h \
+ C:/Users/aryas/OneDrive/Desktop/ECS/include/Manager/EntityManager.hpp \
+ C:/mingw64/include/c++/13.2.0/map \
+ C:/mingw64/include/c++/13.2.0/bits/stl_tree.h \
+ C:/mingw64/include/c++/13.2.0/bits/node_handle.h \
+ C:/mingw64/include/c++/13.2.0/bits/stl_map.h \
+ C:/mingw64/include/c++/13.2.0/bits/stl_multimap.h \
+ C:/mingw64/include/c++/13.2.0/bits/erase_if.h \
+ C:/Users/aryas/OneDrive/Desktop/ECS/include/Components/SpriteComponent.hpp \
+ C:/Users/aryas/OneDrive/Desktop/ECS/include/Components/TransformComponent.hpp
