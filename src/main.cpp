@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
     EntityManager em;
     Entity &e = em.AddEntity();
     Entity &e2 = em.AddEntity("Player");
-
+    e.DestroyEntity();
     em.Update(); // call this in game loop first
 
     /*

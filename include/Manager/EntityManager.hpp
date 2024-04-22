@@ -21,19 +21,17 @@ public:
     EntityManager(){};
     Entity &AddEntity()
     {
-        Entity *e = new Entity();
-        std::shared_ptr<Entity> eUPtr{e};
+        auto e = std::shared_ptr<Entity>(new Entity());
         m_TotalEntites++;
-        this->m_AddedEntities.push_back(eUPtr);
+        this->m_AddedEntities.push_back(e);
         return *e;
     };
 
     Entity &AddEntity(const std::string &tag)
     {
-        Entity *e = new Entity(tag);
-        std::shared_ptr<Entity> eUPtr{e};
+        auto e = std::shared_ptr<Entity>(new Entity(tag));
         m_TotalEntites++;
-        this->m_AddedEntities.push_back(eUPtr);
+        this->m_AddedEntities.push_back(e);
         return *e;
     };
 
