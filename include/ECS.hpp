@@ -79,6 +79,8 @@ using EntityID = std::uint32_t;
 
 class Entity
 {
+    friend class EntityManager;
+
     EntityID m_EntityID;
     std::vector<std::unique_ptr<Component>> m_Components;
     std::size_t m_CurrentComponentSize = 0;
@@ -90,7 +92,6 @@ class Entity
         return lastID++;
     }
 
-public:
     Entity()
     {
         this->m_EntityID = genID();
@@ -103,6 +104,7 @@ public:
         this->m_eTag = tag;
     };
 
+public:
     void DisplayComponents() const
     {
         std::cout << "Entity    #" << this->m_EntityID << std::endl;

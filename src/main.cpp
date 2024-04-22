@@ -5,13 +5,20 @@
 int main(int argc, char *argv[])
 {
     EntityManager em;
+    Entity &e = em.AddEntity();
+    Entity &e2 = em.AddEntity("Player");
 
-    Entity &e = em.AddEntity("Player");
-    Entity &e2 = em.AddEntity("Enemy");
+    em.Update(); // call this in game loop first
 
-    e2.AddComponent<SpriteComponent>();
+    /*
+        while(gameIsRunning) {
+            em.Update();
+            ...
+            ...
+            ...
+        }
 
-    e2 = e;
+    */
 
     em.DisplayComponents();
     return 0;
