@@ -1,21 +1,18 @@
 #include <iostream>
-#include "../include/ECS.hpp"
-#include "../include/Manager/EntityManager.hpp"
 #include <memory>
+#include "../include/Manager/EntityManager.hpp"
 
 int main(int argc, char *argv[])
 {
     EntityManager em;
 
-    std::shared_ptr<Entity> e = em.addEntity();
+    Entity &e = em.AddEntity("Player");
+    Entity &e2 = em.AddEntity("Enemy");
+
+    e2.AddComponent<SpriteComponent>();
+
+    e2 = e;
 
     em.DisplayComponents();
-
-    e->AddComponent<SpriteComponent>();
-
-    e->AddComponent<TransformComponent>();
-
-    em.DisplayComponents();
-
     return 0;
 }

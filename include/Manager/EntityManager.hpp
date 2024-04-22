@@ -1,14 +1,12 @@
 #pragma once
 #include "../ECS.hpp"
+#include "../Components/TransformComponent.hpp"
+#include "../Components/SpriteComponent.hpp"
 #include <vector>
 #include <memory>
 #include <map>
 
-#include "../Components/SpriteComponent.hpp"
-#include "../Components/TransformComponent.hpp"
-
-class Entity;
-typedef std::vector<std::shared_ptr<Entity>> EntityVector;
+typedef std::vector<std::unique_ptr<Entity>> EntityVector;
 typedef std::map<std::string, EntityVector> EntityMap;
 
 class EntityManager
@@ -19,12 +17,33 @@ class EntityManager
 
 public:
     EntityManager(){};
-    std::shared_ptr<Entity> addEntity()
+    Entity &AddEntity()
     {
-        std::shared_ptr<Entity> newEntity = std::make_unique<Entity>();
-        m_Entites.push_back(newEntity);
+        Entity *e = new Entity();
+        std::unique_ptr<Entity> eUPtr{e};
+        this->m_Entites.push_back(std::move(eUPtr));
+        m_TotalEntites++;
+        return *e;
+    };
 
-        return newEntity;
+    Entity &AddEntity(const std::string &tag)
+    {
+        Entity *e = new Entity(tag);
+        std::unique_ptr<Entity> eUPtr{e};
+        this->m_Entites.push_back(std::move(eUPtr));
+        m_TotalEntites++;
+        return *e;
+    };
+
+    void Destroy()
+    {
+        for (auto &e : m_Entites)
+        {
+            if (!e->IsActive())
+            {
+                e = nullptr;
+            }
+        }
     };
 
     void DisplayComponents() const
@@ -34,8 +53,6 @@ public:
             m_Entites[i]->DisplayComponents();
         }
     };
-
-    // std::unique_ptr<Entity> addEntity(const std::string &tag){};
 
     // EntityVector &GetEntities(){};
     // EntityVector &GetEntities(const std::string &tag){};

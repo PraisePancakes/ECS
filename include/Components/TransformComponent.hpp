@@ -14,6 +14,11 @@ public:
         this->xPos += dX;
         this->yPos += dY;
     };
+
+    TransformComponent *Clone() const override
+    {
+        return new TransformComponent(*this);
+    }
     void Update() override{};
     void Init() override{};
     void Render() override{};

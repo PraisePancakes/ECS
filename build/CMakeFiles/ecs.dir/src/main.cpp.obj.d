@@ -141,19 +141,13 @@ CMakeFiles/ecs.dir/src/main.cpp.obj: \
  C:/mingw64/include/c++/13.2.0/bits/ostream.tcc \
  C:/mingw64/include/c++/13.2.0/istream \
  C:/mingw64/include/c++/13.2.0/bits/istream.tcc \
- C:/Users/aryas/OneDrive/Desktop/ECS/include/ECS.hpp \
- C:/mingw64/include/c++/13.2.0/cstdint \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
- C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
- C:/mingw64/include/c++/13.2.0/vector \
- C:/mingw64/include/c++/13.2.0/bits/stl_uninitialized.h \
- C:/mingw64/include/c++/13.2.0/bits/stl_vector.h \
- C:/mingw64/include/c++/13.2.0/bits/stl_bvector.h \
- C:/mingw64/include/c++/13.2.0/bits/vector.tcc \
  C:/mingw64/include/c++/13.2.0/memory \
  C:/mingw64/include/c++/13.2.0/bits/stl_tempbuf.h \
+ C:/mingw64/include/c++/13.2.0/bits/stl_uninitialized.h \
  C:/mingw64/include/c++/13.2.0/bits/stl_raw_storage_iter.h \
  C:/mingw64/include/c++/13.2.0/bits/align.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
+ C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
  C:/mingw64/include/c++/13.2.0/bits/unique_ptr.h \
  C:/mingw64/include/c++/13.2.0/bits/shared_ptr.h \
  C:/mingw64/include/c++/13.2.0/bits/shared_ptr_base.h \
@@ -167,11 +161,17 @@ CMakeFiles/ecs.dir/src/main.cpp.obj: \
  C:/mingw64/include/c++/13.2.0/pstl/glue_memory_defs.h \
  C:/mingw64/include/c++/13.2.0/pstl/execution_defs.h \
  C:/Users/aryas/OneDrive/Desktop/ECS/include/Manager/EntityManager.hpp \
+ C:/Users/aryas/OneDrive/Desktop/ECS/include/ECS.hpp \
+ C:/mingw64/include/c++/13.2.0/cstdint \
+ C:/mingw64/include/c++/13.2.0/vector \
+ C:/mingw64/include/c++/13.2.0/bits/stl_vector.h \
+ C:/mingw64/include/c++/13.2.0/bits/stl_bvector.h \
+ C:/mingw64/include/c++/13.2.0/bits/vector.tcc \
+ C:/Users/aryas/OneDrive/Desktop/ECS/include/Components/TransformComponent.hpp \
+ C:/Users/aryas/OneDrive/Desktop/ECS/include/Components/SpriteComponent.hpp \
  C:/mingw64/include/c++/13.2.0/map \
  C:/mingw64/include/c++/13.2.0/bits/stl_tree.h \
  C:/mingw64/include/c++/13.2.0/bits/node_handle.h \
  C:/mingw64/include/c++/13.2.0/bits/stl_map.h \
  C:/mingw64/include/c++/13.2.0/bits/stl_multimap.h \
- C:/mingw64/include/c++/13.2.0/bits/erase_if.h \
- C:/Users/aryas/OneDrive/Desktop/ECS/include/Components/SpriteComponent.hpp \
- C:/Users/aryas/OneDrive/Desktop/ECS/include/Components/TransformComponent.hpp
+ C:/mingw64/include/c++/13.2.0/bits/erase_if.h
