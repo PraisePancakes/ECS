@@ -61,11 +61,17 @@ public:
         }
     };
 
-    void DisplayComponents() const
+    void DisplayEntities() const
     {
         for (size_t i = 0; i < m_Entites.size(); i++)
         {
-            m_Entites[i]->DisplayComponents();
+            m_Entites[i]->DisplayEntity();
+            if (m_Entites[i]->HasComponent<TransformComponent>())
+            {
+                m_Entites[i]->GetComponent<TransformComponent>().DisplayPosition();
+            }
+            std::cout << "\n"
+                      << std::endl;
         }
     };
 

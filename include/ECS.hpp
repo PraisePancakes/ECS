@@ -105,7 +105,7 @@ class Entity
     };
 
 public:
-    void DisplayComponents() const
+    void DisplayEntity() const
     {
         std::cout << "Entity    #" << this->m_EntityID << std::endl;
         std::cout << "Tag  " << this->m_eTag << std::endl;
@@ -191,7 +191,8 @@ public:
                 return (T &)*c;
             }
         }
-        throw std::runtime_error("Component not found.");
+        std::cout << "Component " << typeid(T).name() << " for entity #" << this->GetID() << " not found" << std::endl;
+        throw std::runtime_error("Invalid Component");
     }
 
     template <typename T>

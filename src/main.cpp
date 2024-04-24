@@ -7,7 +7,11 @@ int main(int argc, char *argv[])
     EntityManager em;
     Entity &e = em.AddEntity();
     Entity &e2 = em.AddEntity("Player");
-    e.DestroyEntity();
+
+    e2.AddComponent<TransformComponent>().GetPosition().AddPosition(5, 40);
+    e.AddComponent<TransformComponent>();
+    e.GetComponent<TransformComponent>().GetPosition().AddPosition(10.00, 15.00).Normalize();
+
     em.Update(); // call this in game loop first
 
     /*
@@ -20,6 +24,6 @@ int main(int argc, char *argv[])
 
     */
 
-    em.DisplayComponents();
+    em.DisplayEntities();
     return 0;
 }

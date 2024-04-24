@@ -17,10 +17,29 @@ namespace Physics
                 this->y = y;
             };
 
-            Vector2D &Add(Vector2D vec)
+            Vector2D &AddPosition(float x, float y)
+            {
+                this->x = x;
+                this->y = y;
+                return *this;
+            }
+
+            Vector2D &AddPosition(Vector2D &vec)
             {
                 this->x += vec.x;
                 this->y += vec.y;
+                return *this;
+            }
+
+            Vector2D &AddX(float x)
+            {
+                this->x += x;
+                return *this;
+            };
+            Vector2D &AddY(float y)
+            {
+                this->y += y;
+                return *this;
             };
 
             Vector2D &Normalize()
@@ -28,6 +47,7 @@ namespace Physics
                 float length = std::sqrt(x * 2 + y * 2);
                 this->x /= length;
                 this->y /= length;
+                return *this;
             }
         };
 

@@ -28,25 +28,10 @@ public:
         return this->m_Position;
     }
 
-    void AddPosition(float x, float y)
+    void DisplayPosition() const
     {
-        this->m_Position.x = x;
-        this->m_Position.y = y;
+        printf("    Position : {x : %f, y : %f}\n", this->m_Position.x, this->m_Position.y);
     }
-
-    void AddPosition(Physics::Math::Vector2D pos)
-    {
-        this->m_Position.Add(pos);
-    }
-
-    void AddX(float x)
-    {
-        this->m_Position.x += x;
-    };
-    void AddY(float y)
-    {
-        this->m_Position.y += y;
-    };
 
     void Update() override{};
     void Init() override{};

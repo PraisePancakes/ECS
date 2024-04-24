@@ -6,6 +6,7 @@ CMakeFiles/ecs.dir/src/main.cpp.obj: C:/Users/aryas/OneDrive/Desktop/ECS/src/mai
   C:/Users/aryas/OneDrive/Desktop/ECS/include/Components/TransformComponent.hpp \
   C:/Users/aryas/OneDrive/Desktop/ECS/include/ECS.hpp \
   C:/Users/aryas/OneDrive/Desktop/ECS/include/Manager/EntityManager.hpp \
+  C:/Users/aryas/OneDrive/Desktop/ECS/include/Physics/Math/Vector2D.hpp \
   C:/mingw64/include/c++/13.2.0/algorithm \
   C:/mingw64/include/c++/13.2.0/backward/auto_ptr.h \
   C:/mingw64/include/c++/13.2.0/backward/binders.h \
@@ -59,6 +60,7 @@ CMakeFiles/ecs.dir/src/main.cpp.obj: C:/Users/aryas/OneDrive/Desktop/ECS/src/mai
   C:/mingw64/include/c++/13.2.0/bits/shared_ptr.h \
   C:/mingw64/include/c++/13.2.0/bits/shared_ptr_atomic.h \
   C:/mingw64/include/c++/13.2.0/bits/shared_ptr_base.h \
+  C:/mingw64/include/c++/13.2.0/bits/specfun.h \
   C:/mingw64/include/c++/13.2.0/bits/std_abs.h \
   C:/mingw64/include/c++/13.2.0/bits/stl_algo.h \
   C:/mingw64/include/c++/13.2.0/bits/stl_algobase.h \
@@ -90,6 +92,7 @@ CMakeFiles/ecs.dir/src/main.cpp.obj: C:/Users/aryas/OneDrive/Desktop/ECS/src/mai
   C:/mingw64/include/c++/13.2.0/cctype \
   C:/mingw64/include/c++/13.2.0/cerrno \
   C:/mingw64/include/c++/13.2.0/clocale \
+  C:/mingw64/include/c++/13.2.0/cmath \
   C:/mingw64/include/c++/13.2.0/cstddef \
   C:/mingw64/include/c++/13.2.0/cstdint \
   C:/mingw64/include/c++/13.2.0/cstdio \
@@ -111,6 +114,7 @@ CMakeFiles/ecs.dir/src/main.cpp.obj: C:/Users/aryas/OneDrive/Desktop/ECS/src/mai
   C:/mingw64/include/c++/13.2.0/iosfwd \
   C:/mingw64/include/c++/13.2.0/iostream \
   C:/mingw64/include/c++/13.2.0/istream \
+  C:/mingw64/include/c++/13.2.0/limits \
   C:/mingw64/include/c++/13.2.0/map \
   C:/mingw64/include/c++/13.2.0/memory \
   C:/mingw64/include/c++/13.2.0/new \
@@ -125,6 +129,18 @@ CMakeFiles/ecs.dir/src/main.cpp.obj: C:/Users/aryas/OneDrive/Desktop/ECS/src/mai
   C:/mingw64/include/c++/13.2.0/string \
   C:/mingw64/include/c++/13.2.0/string_view \
   C:/mingw64/include/c++/13.2.0/system_error \
+  C:/mingw64/include/c++/13.2.0/tr1/bessel_function.tcc \
+  C:/mingw64/include/c++/13.2.0/tr1/beta_function.tcc \
+  C:/mingw64/include/c++/13.2.0/tr1/ell_integral.tcc \
+  C:/mingw64/include/c++/13.2.0/tr1/exp_integral.tcc \
+  C:/mingw64/include/c++/13.2.0/tr1/gamma.tcc \
+  C:/mingw64/include/c++/13.2.0/tr1/hypergeometric.tcc \
+  C:/mingw64/include/c++/13.2.0/tr1/legendre_function.tcc \
+  C:/mingw64/include/c++/13.2.0/tr1/modified_bessel_func.tcc \
+  C:/mingw64/include/c++/13.2.0/tr1/poly_hermite.tcc \
+  C:/mingw64/include/c++/13.2.0/tr1/poly_laguerre.tcc \
+  C:/mingw64/include/c++/13.2.0/tr1/riemann_zeta.tcc \
+  C:/mingw64/include/c++/13.2.0/tr1/special_function_util.h \
   C:/mingw64/include/c++/13.2.0/tuple \
   C:/mingw64/include/c++/13.2.0/type_traits \
   C:/mingw64/include/c++/13.2.0/typeinfo \
@@ -161,6 +177,7 @@ CMakeFiles/ecs.dir/src/main.cpp.obj: C:/Users/aryas/OneDrive/Desktop/ECS/src/mai
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/locale.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/math.h \
   C:/mingw64/x86_64-w64-mingw32/include/process.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
@@ -204,6 +221,12 @@ C:/Users/aryas/OneDrive/Desktop/ECS/src/main.cpp:
 
 C:/Users/aryas/OneDrive/Desktop/ECS/include/Components/SpriteComponent.hpp:
 
+C:/mingw64/include/c++/13.2.0/ios:
+
+C:/mingw64/include/c++/13.2.0/algorithm:
+
+C:/mingw64/include/c++/13.2.0/bits/specfun.h:
+
 C:/mingw64/include/c++/13.2.0/ext/atomicity.h:
 
 C:/mingw64/include/c++/13.2.0/bits/stl_tree.h:
@@ -214,13 +237,13 @@ C:/mingw64/include/c++/13.2.0/bits/new_allocator.h:
 
 C:/mingw64/include/c++/13.2.0/backward/binders.h:
 
-C:/mingw64/include/c++/13.2.0/ios:
+C:/mingw64/include/c++/13.2.0/bits/locale_classes.tcc:
 
-C:/mingw64/include/c++/13.2.0/algorithm:
+C:/Users/aryas/OneDrive/Desktop/ECS/include/Physics/Math/Vector2D.hpp:
 
 C:/mingw64/include/c++/13.2.0/bit:
 
-C:/mingw64/include/c++/13.2.0/bits/stl_function.h:
+C:/mingw64/include/c++/13.2.0/tr1/beta_function.tcc:
 
 C:/mingw64/include/c++/13.2.0/bits/algorithmfwd.h:
 
@@ -247,6 +270,8 @@ C:/mingw64/include/c++/13.2.0/bits/allocated_ptr.h:
 C:/mingw64/include/c++/13.2.0/bits/ostream_insert.h:
 
 C:/mingw64/include/c++/13.2.0/bits/allocator.h:
+
+C:/mingw64/include/c++/13.2.0/tr1/poly_hermite.tcc:
 
 C:/mingw64/include/c++/13.2.0/bits/memoryfwd.h:
 
@@ -278,11 +303,11 @@ C:/mingw64/include/c++/13.2.0/bits/concept_check.h:
 
 C:/mingw64/include/c++/13.2.0/bits/functional_hash.h:
 
+C:/mingw64/x86_64-w64-mingw32/include/math.h:
+
+C:/mingw64/include/c++/13.2.0/tr1/legendre_function.tcc:
+
 C:/mingw64/include/c++/13.2.0/bits/cpp_type_traits.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/limits.h:
-
-C:/mingw64/include/c++/13.2.0/bits/stl_construct.h:
 
 C:/mingw64/include/c++/13.2.0/bits/stl_algo.h:
 
@@ -320,8 +345,6 @@ C:/mingw64/include/c++/13.2.0/bits/hash_bytes.h:
 
 C:/mingw64/include/c++/13.2.0/bits/istream.tcc:
 
-C:/mingw64/include/c++/13.2.0/bits/locale_classes.tcc:
-
 C:/mingw64/include/c++/13.2.0/bits/locale_facets.h:
 
 C:/mingw64/include/c++/13.2.0/bits/locale_facets.tcc:
@@ -346,6 +369,12 @@ C:/mingw64/include/c++/13.2.0/bits/std_abs.h:
 
 C:/mingw64/include/c++/13.2.0/bits/stl_algobase.h:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/limits.h:
+
+C:/mingw64/include/c++/13.2.0/bits/stl_construct.h:
+
+C:/mingw64/include/c++/13.2.0/bits/stl_function.h:
+
 C:/mingw64/include/c++/13.2.0/bits/stl_heap.h:
 
 C:/mingw64/include/c++/13.2.0/bits/stl_iterator.h:
@@ -361,6 +390,8 @@ C:/mingw64/include/c++/13.2.0/bits/stl_iterator_base_types.h:
 C:/mingw64/include/c++/13.2.0/bits/unique_ptr.h:
 
 C:/mingw64/include/c++/13.2.0/bits/stl_map.h:
+
+C:/mingw64/include/c++/13.2.0/limits:
 
 C:/mingw64/include/c++/13.2.0/bits/stl_multimap.h:
 
@@ -395,6 +426,8 @@ C:/mingw64/include/c++/13.2.0/bits/vector.tcc:
 C:/mingw64/include/c++/13.2.0/cerrno:
 
 C:/mingw64/include/c++/13.2.0/clocale:
+
+C:/mingw64/include/c++/13.2.0/cmath:
 
 C:/mingw64/include/c++/13.2.0/cstddef:
 
@@ -460,6 +493,26 @@ C:/mingw64/include/c++/13.2.0/string:
 
 C:/mingw64/include/c++/13.2.0/system_error:
 
+C:/mingw64/include/c++/13.2.0/tr1/bessel_function.tcc:
+
+C:/mingw64/include/c++/13.2.0/tr1/exp_integral.tcc:
+
+C:/mingw64/include/c++/13.2.0/tr1/ell_integral.tcc:
+
+C:/mingw64/include/c++/13.2.0/tr1/gamma.tcc:
+
+C:/mingw64/include/c++/13.2.0/tr1/hypergeometric.tcc:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h:
+
+C:/mingw64/include/c++/13.2.0/tr1/modified_bessel_func.tcc:
+
+C:/mingw64/include/c++/13.2.0/tr1/poly_laguerre.tcc:
+
+C:/mingw64/include/c++/13.2.0/tr1/riemann_zeta.tcc:
+
+C:/mingw64/include/c++/13.2.0/tr1/special_function_util.h:
+
 C:/mingw64/include/c++/13.2.0/tuple:
 
 C:/mingw64/include/c++/13.2.0/type_traits:
@@ -491,8 +544,6 @@ C:/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/os_defines.h:
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mm_malloc.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h:
 
