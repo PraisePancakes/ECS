@@ -33,7 +33,7 @@ public:
         printf("    Position : {x : %f, y : %f}\n", this->m_Position.x, this->m_Position.y);
     }
 
-    void Update() override{};
+     void Update() override{};
     void Init() override{};
     void Render() override{};
 

@@ -8,22 +8,19 @@ int main(int argc, char *argv[])
     Entity &e = em.AddEntity();
     Entity &e2 = em.AddEntity("Player");
 
-    e2.AddComponent<TransformComponent>().GetPosition().AddPosition(5, 40);
-    e.AddComponent<TransformComponent>();
-    e.GetComponent<TransformComponent>().GetPosition().AddPosition(10.00, 15.00).Normalize();
+    TransformComponent c = e2.AddComponent<TransformComponent>();
 
-    em.Update(); // call this in game loop first
+    em.Update(); // call this in game loop
 
     /*
-        while(gameIsRunning) {
-            em.Update();
-            ...
-            ...
-            ...
-        }
+     while(gameIsRunning) {
+         em.Update();
+         ...
+         ...
+         ...
+     }
 
-    */
-
+ */
     em.DisplayEntities();
     return 0;
 }

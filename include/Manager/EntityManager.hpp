@@ -50,6 +50,16 @@ public:
         m_AddedEntities.clear();
     };
 
+    EntityVector &GetEntities()
+    {
+        return this->m_Entites;
+    };
+
+    EntityVector &GetEntities(const std::string &tag)
+    {
+        return this->m_EntityMap[tag];
+    };
+
     void Destroy()
     {
         for (auto &e : m_Entites)
@@ -75,8 +85,8 @@ public:
         }
     };
 
-    // EntityVector &GetEntities(){};
-    // EntityVector &GetEntities(const std::string &tag){};
-
-    ~EntityManager(){};
+    ~EntityManager()
+    {
+        Destroy();
+    };
 };

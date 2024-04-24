@@ -219,12 +219,14 @@ public:
         {
             return GetComponent<T>();
         }
-        T *c = new T();
-        c->entity = this;
-        std::unique_ptr<T> cUPtr{c};
+
+        std::unique_ptr<T> cUPtr = std::make_unique<T>();
+        T &addedComponent = *cUPtr;
+        addedComponent.entity = this;
+
         this->m_Components.push_back(std::move(cUPtr));
         m_CurrentComponentSize = m_Components.size();
-        return *c;
+        return addedComponent;
     };
 
     bool IsActive() const
@@ -255,6 +257,7 @@ public:
 
     ~Entity()
     {
+
         std::cout << "Entity with ID " << m_EntityID << " destroyed." << std::endl;
     };
 };
